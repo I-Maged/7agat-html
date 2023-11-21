@@ -1,0 +1,57 @@
+.hero-slogan {
+  padding: 2rem 0;
+}
+
+.hero-slogan h1 {
+  font-size: 10rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.hero-h2 {
+  display: flex;
+}
+
+.hero-h2-eng {
+  font-size: 6rem;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.hero-h2-ar {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-h2-ar-right {
+  align-self: flex-end;
+  font-size: 2.5rem;
+}
+
+.hero-h2-ar-left {
+  font-size: 2.5rem;
+}
+
+/*  */
+
+.about-container {
+  font-size: 16px;
+  line-height: 2.4rem;
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.about-text {
+  text-align: right;
+}
+.team-list h3 {
+  padding-bottom: 1rem;
+}
+.team-list ul {
+  list-style-type: none;
+}
+.team-list li {
+  padding: 1rem 0;
+}

@@ -1,0 +1,130 @@
+/* import font from google */
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;500;600;700&display=swap');
+
+/* declare variables */
+:root {
+  --background-main: #faf1e2;
+  --background-second: #f5fae2;
+  --font-main: #48877c;
+  --button-bg: #d4e1d7;
+  --light-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8);
+  --dark-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  font-family: 'Lemonada', cursive;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--font-main);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* General styling */
+body {
+  color: var(--font-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1;
+  font-weight: 400;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--background-main);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reused styling */
+.link {
+  padding-bottom: 5px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--font-main);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Header */
+header {
+  padding: 2rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  text-shadow: 3px 3px 5px rgba(45, 84, 77, 1);
+  flex-shrink: 0;
+  width: 100vw;
+}
+.header-nav-links {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--background-second);
+  flex-shrink: 0;
+  width: 100vw;
+  text-align: center;
+  padding: 5rem 3rem;
+  border-top: 1px solid var(--font-main);
+  margin-bottom: 0;
+}
+.footer-title {
+  font-size: 3rem;
+  text-align: center;
+}
+.footer-text {
+  margin-top: 2rem;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2rem;
+}
