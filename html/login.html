@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="link" href="./homepage.html">
+                <div>حـــــاجــــات</div>
+                <div>7AGAT</div>
+            </a>
+        </div>
+        <div class="header-nav-links">
+            <a class="link" href="#">
+                التسجيل
+            </a>
+            <a class="link" href="./about.html">
+                من نحن
+            </a>
+        </div>
+    </header>
+
+    <!-- Login Content -->
+    <!-- form container -->
+    <div class='form-container'>
+        <img src='../assets/images/form.png' alt='form' />
+        <h3 class='form-title'>أهلًا بك في حاجات</h3>
+        <p class='footer-text'>نتمنى لك تجربة ممتعة</p>
+        <!-- Login form -->
+        <form class='register-form' id="login-form">
+            <div class='input-field'>
+                <input type='email' name='email' id='email' autoComplete='off' placeholder=' ' />
+                <label for='email'>البريد الإلكتروني</label>
+            </div>
+            <div class='input-field'>
+                <input type='password' name='password' id='password' placeholder=' ' />
+                <label for='password'>كلمة المرور</label>
+            </div>
+            <button type='submit' class='main-btn' id="login-submit">
+                تسجيل الدخول
+            </button>
+            <button class='form-toggle-btn' id="login-toggle-btn">
+                ليس لديك حساب؟
+            </button>
+        </form>
+
+        <!-- Register form -->
+        <form class='register-form' id="register-form">
+            <div class='input-field'>
+                <input type='username' name='username' id='username' autoComplete='off' placeholder=' ' />
+                <label for='username'>اسم المستخدم</label>
+            </div>
+            <div class='input-field'>
+                <input type='email' name='email' id='email' autoComplete='off' placeholder=' ' />
+                <label for='email'>البريد الإلكتروني</label>
+            </div>
+            <div class='input-field'>
+                <input type='password' name='password' id='password' placeholder=' ' />
+                <label for='password'>كلمة المرور</label>
+            </div>
+            <div class='input-field'>
+                <input type='password' name='password2' id='password2' placeholder=' ' />
+                <label for='password2'>
+                    تأكيد كلمة المرور
+                </label>
+            </div>
+            <button type='submit' class='main-btn' id="register-submit">
+                إنشاء حساب
+            </button>
+            <button class='form-toggle-btn' id="register-toggle-btn">
+                لديك حساب بالفعل؟
+            </button>
+        </form>
+    </div>
+
+    <!--  -->
+    <footer>
+        <a class="link" href="./basic-units.html">
+            <h3 class="footer-title">Basic Units</h3>
+        </a>
+        <p class="footer-text">
+            Copyright &copy; by 7AGAT, LLC. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
